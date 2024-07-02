@@ -1,0 +1,11 @@
+services:
+  chatbot:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    container_name: chatbot
+    ports:
+      -"8080:8080"
+    volumes:
+      -.:/usr/src/app
+    command: python chatbot.py
