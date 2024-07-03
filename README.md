@@ -4,9 +4,26 @@
 * Python 3.7.9
 
 ## Installation
-- Execute
+- Install dependencies:
 ```sh
 pip install -r requirements.txt
+```
+
+## Usage
+### Option 1 - WebServer
+- Set the Flask envirenment
+```sh
+set FLASK_APP=chatbot.py
+```
+
+- Run the web version
+```sh
+flask run
+```
+### Option 2 - Terminal
+- Run the terminal version
+```sh
+python chatbot.py
 ```
 
 ## FAQ
