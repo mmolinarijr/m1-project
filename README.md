@@ -33,17 +33,17 @@ python -m spacy link en_core_web_md en --force
 
 ## Usage
 ### Option 1 - WebServer
-- Set Flask envirenment
+- Set Flask environment:
 ```sh
 set FLASK_APP=chatbot.py
 ```
 
-- Run the web version
+- Run the web version:
 ```sh
 flask run
 ```
 ### Option 2 - Terminal
-- Run the terminal version
+- Run the terminal version:
 ```sh
 python chatbot.py
 ```
