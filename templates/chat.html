@@ -117,13 +117,19 @@
     <!-- Server requests -->
     <script type="text/javascript">
         $(function () {
+            function toggleSubmitButton() {
+                const userInput = $('#user-input').val().trim();
+                $('#chatbot-form-btn').prop('disabled', userInput === '');
+            }
+
             $('#chatbot-form-btn').click(function (e) {
                 e.preventDefault();
                 $('#chatbot-form').submit();
             });
 
             $('#chatbot-form-btn-clear').click(function (e) {
-                $('#user-input').val('');
+                $('#user-input').val('').focus();
+                toggleSubmitButton();
             });
 
             $('#chatbot-form').submit(function (e) {
@@ -154,7 +160,7 @@
                                 '6 - Qual o site da empresa?',
                             ]
 
-                            let initialMessagesHTML = `
+                            const initialMessagesHTML = `
                                 <li class="media">
                                     <div class="media-body bot-message">
                                         <span style="padding: 0px; color: red; float: left;">M1 Motors - </span> <br/> ${initialMessages.join('<br/>')}
@@ -181,6 +187,9 @@
                 });
             })
 
+            toggleSubmitButton();
+
+            $('#user-input').on('input', toggleSubmitButton);
         })
     </script>
 </body>
