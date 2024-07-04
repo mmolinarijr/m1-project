@@ -96,6 +96,24 @@ training_data1 = [
     'Como posso agendar um test drive?',
     more_information,
     'preciso de ajuda pra comprar um carro',
+    more_information,
+    'email',
+    email,
+    'qual email',
+    email',
+    'qual e-mail?'
+    email',
+    'comprar carro',
+    more_information,
+    'preciso falar com setor financeiro',
+    phone_number,
+    'preciso falar com alguem',
+    phone_number,
+    'revenda',
+    more_information,
+    'financiamento',
+    more_information,
+    'consignado',
     more_information
 ]
 
