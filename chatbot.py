@@ -110,4 +110,4 @@ def chat_with_bot():
 # Start the app either terminal or web
 if __name__ == '__main__':
     chat_with_bot()
-    app.run(ssl_context='adhoc')
+    app.run()
