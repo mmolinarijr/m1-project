@@ -34,8 +34,14 @@ python -m spacy link en_core_web_md en --force
 ## Usage
 ### Option 1 - WebServer
 - Set Flask environment:
+
+Windows
 ```sh
 set FLASK_APP=chatbot.py
+```
+Linux/Mac/Unix
+```sh
+export FLASK_APP=chatbot.py
 ```
 
 - Run the web version:
